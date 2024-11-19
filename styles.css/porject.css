@@ -1,6 +1,4 @@
 *{
-   margin: 0px;
-   padding: 0px;
    font-family: "Mulish", sans-serif;
    font-optical-sizing: auto;
 }
@@ -27,21 +25,21 @@ nav{
 .title-color{
     color: var(--primary-color);
 }
-nav ul{
+.nav-ul{
     display: flex;
     gap: 28px;
 }
-nav li{
+.nav-li{
     list-style: none;
     font-size: 1.125rem;
     font-weight: 400;
 }
-nav li a{
+.nav-li , a{
     text-decoration: none;
     color: #424247;
 }
 nav ul li a:hover{
-    background:#FF5400;
+    background: var(--primary-color);
     border: 0px solid;
     color: #FFF;
     padding: 12px;
@@ -92,37 +90,43 @@ nav ul li a:hover{
     font-size: .85rem;
     font-style: normal;
     font-weight: 400;
-    padding:16px ;
+    padding: 16px 0px 16px 16px ;
     border: 0px solid ;
 }
 .select{
+    color: #13131880;
     font-size: .85rem;
     font-weight: 400;
     border-radius: 8px;
     background: #FFF;
-    padding: 16px 65px 16px 16px ;
+    padding: 16px 60px 16px 16px;
     border: 0px solid;
 }
 .type{
+    color: #13131880;
     font-size: .85rem;
     font-weight: 400;
     border-radius: 8px;
     background: #FFF;
-    padding: 16px 80px 16px 16px ;
+    padding: 16px 80px 16px 16px;
     border: 0px solid;
 }
 .button-find{
 }
 .find{
     display: flex;
-    font-size: .99rem;
+    font-size: .89rem;
     font-weight: 700;
     border-radius: 8px;
     background: var(--primary-color);
     color: #FFF;
-    padding: 16px 50px 16px 16px;
+    padding-right: 40px  ;
+    padding-left: 30px;
     border: 0px solid;
     gap: 10px;
+}
+.find img {
+    padding-top: 12px;
 }
 .bag-grd{
     border-radius: 16px;
@@ -133,8 +137,284 @@ nav ul li a:hover{
     height: 100%;
     width: 100%;
 }
+/* main  */
+main{
+    padding: 60px 130px;
+}
+/* popular tours  */
+.popular-tours{
+    display: flex;
+    gap: 80px;
+}
+.popular-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.popular-pera{
+    color: #131318B2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.popular-li{
+    color: #131318B2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.read{
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    padding: 14px 40px;
+    font-size: .89rem;
+    font-weight: 500;
+    border: 0px solid;
+}
+/* destination  */
+.description{
+    text-align: center;
+    margin-top: 100px ;
+    margin-bottom: 48px;
+}
+.descr-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 10px 0px ;
+}
+.descr-pera{
+    color: #13131880;
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 26px;
+    width: 643px;
+    margin: auto;
+}
+.destination-places{
+    margin-top: 50px;
+}
+.places{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 12px;
+}
+.places-img{
+    width: 100%;
+    height: 300px;
+}
+.places-div{
+    position: relative;
+    flex-grow: 1;
+}
+.places-name1{
+    position: absolute;
+    left: 39%;
+    top: 32%;
+    z-index: 5;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.places-div2{
+    position: relative;
+    flex-grow: 1;
+}
+.places-name2{
+    position: absolute;
+    left: 39%;
+    top: 32%;
+    z-index: 5;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.rect6{
+    flex-grow: 2;
+    position: relative;
+}
+.name6{
+    position: absolute;
+    left: 38%;
+    top: 30%;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.rect7{
+    flex-grow: 3;
+    position: relative;
+}
+.name7{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 34%;
+}
+.rect9{
+    flex-grow: 1;
+    position: relative;
+}
+.name9{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    top: 32%;
+    left: 35%;
+}
+.rect11{
+    flex-grow: .8;
+    position: relative;
+}
+.name11{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 34%;
+}
+.rect10{
+    flex-grow: 1;
+    position: relative;
+}
+.name10{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 38%;
+}
+/* card item styles? */
 
-
+/* card-hotels */
+.tow-card{
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+.hotels{
+    padding: 32px 52px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.hotel-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0px ;
+}
+.hotel-pera{
+    color: #131318B2;
+    font-size: .85rem;
+    font-weight: 400;
+    margin: 0px;
+    width: 486px; 
+}
+.service{
+    padding: 32px 52px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.service-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0px ;
+}
+.service-pera{
+    color: #131318B2;
+    font-size: .85rem;
+    font-weight: 400;
+    margin: 0px;
+    width: 486px;
+}
+.best-price{
+    padding: 32px 52px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: fit-content;
+    margin: 24px auto ;
+}
+.price-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0px ;
+}
+.price-pera{
+    color: #131318B2;
+    font-size: .85rem;
+    font-weight: 400;
+    margin: 0px;
+    width: 486px;
+}
+/* offer related styles  */
+.offer{
+    position: relative;
+    padding-top: 24px;
+}
+.group img{
+    width: 100%;
+}
+.box1{
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    z-index: 5;
+    width: 580px;
+}
+.box2{
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 5;
+    width: 580px;
+}
+.date{
+    display: flex;
+}
+.date img{
+    width: 24px;
+    height: 24px;
+}
+.day{
+    margin: 2px;
+    padding: 0px 24px 0px 8px ;
+    color: #5A5A5D;
+}
+.box-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 16px 0px;
+}
+.box-pera{
+    font-size: .90rem;
+    font-weight: 400;
+    color: #5A5A5D;
+}
+.price{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.book-now{
+    border-radius: 8px;
+    background: var(--primary-color);
+    padding: 14px 25px;
+    color: #FFF;
+    border: 0px solid;
+    font-size: .85rem;
+    font-weight: 600;
+}
 
 
 /* responsive relative  */
@@ -145,7 +425,7 @@ nav ul li a:hover{
     nav{
        flex-direction: column;
     }
-    nav ul{
+    .nav-ul{
         display: none;
         padding-top: 24px;
         gap: 10px;
@@ -157,6 +437,85 @@ nav ul li a:hover{
         flex-direction: column;
         gap: 10px;
         margin: 16px;
+    } 
+    /* main  */
+    main{
+        padding: 16px;
+    }
+    /* .popular-tours  */
+    .descr-pera{
+        width: 100%;
+    }
+    .popular-tours{
+        flex-direction: column;
+    }
+    .popular-img img{
+        width: 100%;
+    }
+    /* destination  */
+    .description{
+        margin: 24px 0px;
+    }
+    .places{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .places img{
+        height: 182px;
+    }
+    /* card item  */
+    .tow-card{
+        flex-direction: column;
+    }
+    .hotels{
+        padding: 32px;
+    }
+    .hotel-pera{
+        width: 100%;
+    }
+    .service{
+        padding: 32px;
+    }
+    .service-pera{
+        width: 100%;
+    }
+    .best-price{
+        padding: 32px;
+    }
+    .price-pera{
+        width: 100%;
+    }
+    /* offer  */
+    .group img{
+        width: 100%;
+        height: 500px;
+    }
+    .box1{
+        padding:  24px ;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        z-index: 5;
+        width: 303px;
+    }
+    .box2{
+        padding: 24px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        z-index: 5;
+        width: 303px;
+    }
+    .date{
+        flex-wrap: wrap;
     }
     
 }
