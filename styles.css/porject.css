@@ -79,7 +79,7 @@ nav ul li a:hover{
 .banner-item-selection{
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.30); 
-    margin: 40px 80px ;
+    margin: 40px auto ;
     padding: 16px;  
     display: flex; 
     justify-content: space-evenly;
